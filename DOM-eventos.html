@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM eventos</title>
+</head>
+<body>
+    <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis officia facere magni at, sequi explicabo necessitatibus impedit culpa in reiciendis sit illo quos dolore deserunt nihil inventore laborum dolores odit!</p>
+    <button id="botao1" onclick="atualizacao()">Atualização de texto</button>
+    <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis adipisci voluptatibus impedit dicta et error cum autem, odit ea quas nihil explicabo reiciendis nam accusamus porro nemo vel aspernatur ipsum?</p>
+    <button id="botao2" onclick="atualizaTexto2()">Atualização 2</button>
+    <script type="text/javascript">
+
+        function atualizacao(){
+            var texto1 = document.getElementById("texto1");
+            texto1.innerText = "O texto mudou néguim!!!"
+        }
+        function atualizaTexto2(){
+            var texto2 = document.getElementById("texto2");
+            texto2.innerText = "Tudo novo de novo!!!"
+        }
+    </script>
+</body>
+</html>
