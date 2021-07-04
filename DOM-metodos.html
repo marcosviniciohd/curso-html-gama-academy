@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação do DOM com JavaScript</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contatos</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p id="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea, doloremque laudantium reiciendis exercitationem rem quibusdam asperiores harum impedit iure sed quo deserunt! Tenetur officia harum labore expedita nisi quam!
+            Quaerat temporibus veritatis laboriosam suscipit perferendis animi consequuntur aspernatur maiores accusantium maxime quia fugit eos natus deleniti, vero pariatur possimus reiciendis dolore tempore vitae tenetur. Quam omnis ad dolorem magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae tempore mollitia numquam illo, molestias sequi cumque nisi ipsa fugiat, facilis ullam expedita voluptate fugit labore esse perferendis ut aut!</p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var paragrafo = document.getElementById("article-description");
+
+        paragrafo.style.color = "blue"; 
+
+        paragrafo.innerText = "Texto mudou!"
+    </script>
+</body>
+</html>
